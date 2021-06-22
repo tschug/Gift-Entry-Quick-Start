@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>npsp__DataImport__c.Acknowledgement_Status__c</members>
+		<members>npsp__DataImport__c.Credit_Card_Type__c</members>
+		<members>npsp__DataImport__c.Donor_Notes__c</members>
+		<members>npsp__DataImport__c.Due_Date__c</members>
+		<members>npsp__DataImport__c.Honoree_Contact__c</members>
+		<members>npsp__DataImport__c.Honoree_Name__c</members>
+		<members>npsp__DataImport__c.Invoice_Date__c</members>
+		<members>npsp__DataImport__c.Matching_Gift_Account__c</members>
+		<members>npsp__DataImport__c.Matching_Gift_Employer__c</members>
+		<members>npsp__DataImport__c.Matching_Gift_Status__c</members>
+		<members>npsp__DataImport__c.Opportunity_Currency_ISO_Code__c</members>
+		<members>npsp__DataImport__c.Opportunity_Price_Book__c</members>
+		<members>npsp__DataImport__c.Opportunity_Receivable_GAU__c</members>
+		<members>npsp__DataImport__c.Payment_Account__c</members>
+		<members>npsp__DataImport__c.Payment_General_Accounting_Unit__c</members>
+		<members>npsp__DataImport__c.Payment_Record_Type_Name__c</members>
+		<members>npsp__DataImport__c.Tribute_Type__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>True_False</members>
+		<name>GlobalValueSet</name>
+	</types>
+	<types>
+		<members>Gift_Entry_CSP</members>
+		<members>Gift_Entry_Recommended</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>Gift_Entry_Combined_Updates</members>
+		<name>PermissionSetGroup</name>
+	</types>
+	<version>48.0</version>
+</Package>
