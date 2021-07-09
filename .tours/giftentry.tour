@@ -142,5 +142,6 @@
       "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Tribute_Type__c",
       "line": 3
     }
-  ]
+  ],
+  "isPrimary": true
 }
