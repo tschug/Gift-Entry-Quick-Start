@@ -1,0 +1,146 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "GiftEntry",
+  "steps": [
+    {
+      "file": "GiftEntry/README.md",
+      "description": "Welcome to the Tour!  Please review this Read Me page before continuing on the Tour.",
+      "line": 1
+    },
+    {
+      "file": "GiftEntry/manifest/package.xml",
+      "description": "The package.xml will contain all the items that will/should be pushed into the org as part of this Quick Start.\r\n\r\nYou can edit this if you needed to change what is deployed.",
+      "line": 2
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/globalValueSets/True_False.globalValueSet-meta.xml",
+      "description": "Gift Entry relies on the NPSP Data Import process.  To render checkboxes in Gift Entry, it actually uses a picklist on Data Import using True or False.  It's easiest to create this as a global picklist in order to save time.",
+      "line": 2
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/permissionsets/Gift_Entry_Recommended.permissionset-meta.xml",
+      "description": "Salesforce provides a list of necessary and recommended access to have Gift Entry fuction correctly.  These are provided here, as we have not seen it delivered to clients who have NPSP.",
+      "line": 2
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/permissionsets/Gift_Entry_CSP.permissionset-meta.xml",
+      "description": "This permission set grants the necessary access to the custom fields that are created in this process in order to have Gift Entry work properly.",
+      "line": 2
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/permissionsetgroups/Gift_Entry_Combined_Updates.permissionsetgroup-meta.xml",
+      "description": "This Permission Set Group combines the previously shown Permission Sets.  This way it's easier for a client to assign to a user.",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/scripts/DeployCommand.txt",
+      "description": "To deploy this metadata to an organization, this command will use the package.xml file to send all the listed metadata items.\r\n\r\nSince a test class will be required, the \"MyProfilePageControllerTest\" test class should exist in all client orgs and using the \"RunSpecifiedTests\" will limit it to use that test class.\r\n\r\n1) Connect your VS Code to the end-point org that these need to go into.\r\n2) Run this code in the VS Code Terminal and replace the \"[ALIAS]\" with the alias of the org from Step 1.",
+      "line": 1,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 76
+        },
+        "end": {
+          "line": 3,
+          "character": 103
+        }
+      }
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Acknowledgement_Status__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Acknowledgment_Status__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Credit_Card_Type__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map npe01__OppPayment__c.cspb__Credit_Card_Type__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Donor_Notes__c.field-meta.xml",
+      "description": "This is only an example we've seen with some client - it's not pushed to the org as it's not in the package.xml",
+      "line": 3,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 4,
+          "character": 1
+        }
+      }
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Due_Date__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.quot__Due_Date__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Honoree_Contact__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Honoree_Contact__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Honoree_Name__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Honoree_Name__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Invoice_Date__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.quot__Invoice_Date__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Matching_Gift_Account__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Matching_Gift_Account__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Matching_Gift_Employer__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Matching_Gift_Employer__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Matching_Gift_Status__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Matching_Gift_Status__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Opportunity_Currency_ISO_Code__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.pymt__Currency_ISO_Code__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Opportunity_Price_Book__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.Pricebook2Id",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Opportunity_Receivable_GAU__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.cspb__Receivable_GAU__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Payment_Account__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map npe01__OppPayment__c.cspb__Account__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Payment_General_Accounting_Unit__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map npe01__OppPayment__c.cspb__General_Accounting_Unit__c",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Payment_Record_Type_Name__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map npe01__OppPayment__c.RecordTypeId",
+      "line": 3
+    },
+    {
+      "file": "GiftEntry/force-app/main/default/objects/npsp__DataImport__c/fields/Tribute_Type__c.field-meta.xml",
+      "description": "Adding a field to NPSP Data Import to map Opportunity.npsp__Tribute_Type__c",
+      "line": 3
+    }
+  ]
+}
